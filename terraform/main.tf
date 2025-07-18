@@ -55,7 +55,7 @@ module "mlflow_s3_bucket" {
    providers = {
    aws = aws.primary
  }
-  source_bucket_name = "mlflow-source-bucket-niico-phase3"
+  source_bucket_name = "phase3-mlflow-source-bucket"
 }
 
 module "iam_resources" {
@@ -73,22 +73,22 @@ module "datasets" {
   source = "./modules/data"
 }
 
-module "mlflow_instance" {
-  source = "./modules/ec2"
-   providers = {
-   aws = aws.primary
- }
-  ami_id = module.datasets.ubuntu_ami_id
-  instance_type = "t3.medium"
-  key_name = "mlops"
-  security_group_ids = [module.mlflow_security_groups.sg_id]
-  subnet_id = module.project_vpc.public_subnet_ids[0]
-  user_data = module.datasets.mlflow_user_data
-  iam_instance_profile  = module.iam_resources.mlflow_instance_profile_name 
-  tags = {
-    "Name" = "mlflow-server"
-  }
-}
+# module "mlflow_instance" {
+#   source = "./modules/ec2"
+#    providers = {
+#    aws = aws.primary
+#  }
+#   ami_id = module.datasets.ubuntu_ami_id
+#   instance_type = "t3.medium"
+#   key_name = "degen-mlops"
+#   security_group_ids = [module.mlflow_security_groups.sg_id]
+#   subnet_id = module.project_vpc.public_subnet_ids[0]
+#   user_data = module.datasets.mlflow_user_data
+#   iam_instance_profile  = module.iam_resources.mlflow_instance_profile_name 
+#   tags = {
+#     "Name" = "mlflow-server"
+#   }
+# }
 
 resource "local_file" "apply_outputs" {
   filename = "outputs.txt"
