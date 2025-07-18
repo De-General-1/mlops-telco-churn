@@ -1,0 +1,10 @@
+artifact_location: file:///home/fafa/Phase-3/mlops-telco-churn/mlruns/554968213653708473/models/m-94b47234481d470b9bb5f42d08276f6e/artifacts
+creation_timestamp: 1752749680772
+experiment_id: '554968213653708473'
+last_updated_timestamp: 1752749684162
+model_id: m-94b47234481d470b9bb5f42d08276f6e
+model_type: null
+name: model
+source_run_id: 00d7b6892d564d718c047f40d21f906c
+status: 2
+status_message: null

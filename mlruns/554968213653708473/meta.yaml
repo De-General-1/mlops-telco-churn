@@ -1,0 +1,6 @@
+artifact_location: file:///home/fafa/Phase-3/mlops-telco-churn/mlruns/554968213653708473
+creation_time: 1752748131252
+experiment_id: '554968213653708473'
+last_update_time: 1752748131252
+lifecycle_stage: active
+name: telco-churn-prediction

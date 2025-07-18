@@ -1,0 +1,14 @@
+artifact_uri: file:///home/fafa/Phase-3/mlops-telco-churn/mlruns/554968213653708473/00d7b6892d564d718c047f40d21f906c/artifacts
+end_time: 1752749684187
+entry_point_name: ''
+experiment_id: '554968213653708473'
+lifecycle_stage: active
+run_id: 00d7b6892d564d718c047f40d21f906c
+run_name: incongruous-vole-963
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752749680296
+status: 3
+tags: []
+user_id: fafa
