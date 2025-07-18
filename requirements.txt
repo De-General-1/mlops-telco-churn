@@ -1,7 +1,10 @@
 pandas
 scikit-learn
-mlflow
+mlflow<3
 joblib
 great_expectations
 matplotlib
 seaborn
+boto3
+great_expectations
+dagshub

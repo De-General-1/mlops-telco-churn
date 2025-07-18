@@ -3,10 +3,13 @@
 all: fetch preprocess train
 
 fetch:
-	python scripts/fetch_data.py
+	python3 scripts/fetch_data.py
 
 preprocess: fetch
-	python scripts/preprocess_validate.py
+	python3 scripts/preprocess_validate.py
 
 train: preprocess
-	python scripts/train_evaluate.py
+	python3 scripts/train_evaluate.py
+	
+clean:
+	rm -rf data/*.csv __pycache__/

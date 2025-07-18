@@ -1,0 +1,14 @@
+artifact_uri: file:///home/fafa/Phase-3/mlops-telco-churn/mlruns/554968213653708473/6853ee1115bb42cbbcd93cb0517637e0/artifacts
+end_time: 1752748135749
+entry_point_name: ''
+experiment_id: '554968213653708473'
+lifecycle_stage: active
+run_id: 6853ee1115bb42cbbcd93cb0517637e0
+run_name: bouncy-chimp-831
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752748131416
+status: 3
+tags: []
+user_id: fafa
