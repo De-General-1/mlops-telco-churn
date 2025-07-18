@@ -8,3 +8,5 @@ seaborn
 boto3
 great_expectations
 dagshub
+pytest
+ruff
